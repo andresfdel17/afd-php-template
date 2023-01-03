@@ -1,0 +1,16 @@
+.env
+nextcloud/
+App/Uploads/
+App/Plugins/
+App/Storage/
+App/Reports/
+Public/img/Slider/
+.gitmodules
+node_modules
+package-lock.json
+.user.ini
+Public/error_log
+php.ini
+browscap.ini
+composer.lock
+vendor/
