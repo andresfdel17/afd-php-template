@@ -206,24 +206,4 @@ class Core
         echo $render;
         if (!$debug) rmdir_(dirname(dirname(__FILE__)) . DIRECTORY_SEPARATOR . 'Views' . DIRECTORY_SEPARATOR . 'cache', true);
     }
-    /**
-     * 
-     * viewPDF
-     * (EN) This method is responsible for rendering the views for pdf.
-     * (ES) Este método se encarga de renderizar las vistas para pdf.
-     * @param string $view
-     * (EN) Name and path of the view file
-     * (ES) Nombre y ruta del archivo de vista
-     * @param array  $data
-     * (EN) Array containing variables that will be passed to the view.
-     * (ES) Array que contiene variables que seran pasadas a la vista.
-     * @return string
-     */
-    public function viewPDF(string $view, array $data = [], string $module = "", bool $minify = false, $debug = false)
-    {
-        $blade = new Blade(dirname(dirname(__FILE__)) . DIRECTORY_SEPARATOR . 'Views', dirname(dirname(__FILE__)) . DIRECTORY_SEPARATOR . 'Views' . DIRECTORY_SEPARATOR . 'cache');
-        $render = ($minify != false ? $blade->make($view, $data)->render() : html_minify($blade->make($view, $data)->render()));
-        if (!$debug) rmdir_(dirname(dirname(__FILE__)) . DIRECTORY_SEPARATOR . 'Views' . DIRECTORY_SEPARATOR . 'cache', true);
-        return $render;
-    }
 }

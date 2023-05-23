@@ -1,0 +1,39 @@
+
+# name: Deploy into production
+# on:
+#   push:
+#     branches:
+#       - main
+# env:
+#   SSH_PATH: ${{ secrets.PATH_TEST }}${{secrets.PROJECT_ID_TEST}}
+#   ENV: testing
+# jobs:
+#   deploy:
+#     runs-on: ubuntu-latest
+#     name: Deploy into Prod
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v3
+#       - name: rsync deployment
+#         uses: burnett01/rsync-deployments@5.2.1
+#         with:
+#           switches: -avzr --exclude='vendor' --exclude='.env' --exclude='.git' --exclude='.gitmodules'  --exclude='.gitignore' --exclude='.vscode'
+#           path: .
+#           remote_path: ${{ env.SSH_PATH }}
+#           remote_host: ${{ secrets.HOST }}
+#           remote_port: ${{ secrets.PORT }}
+#           remote_user: ${{ secrets.USER }}
+#           remote_key: ${{ secrets.SSH_KEY }}
+#           remote_key_pass: ${{ secrets.SSH_KEY_PASS }}
+#       - name: Execute scripts
+#         uses: appleboy/ssh-action@master
+#         with:
+#           host: ${{ secrets.HOST }}
+#           username: ${{ secrets.USER }}
+#           key: ${{ secrets.SSH_KEY }}
+#           passphrase: ${{ secrets.SSH_KEY_PASS }}
+#           port: ${{ secrets.PORT }}
+#           script: |
+#             cd ${{ env.SSH_PATH }}
+#             composer install
+#             cp ${{ env.SSH_PATH }}/env/${{env.ENV}}.env ${{ env.SSH_PATH }}/.env

@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond $1 !^(index\.php|images|styles|scripts|nextcloud|Public|robots\.txt|favicon\.ico)
+    RewriteRule ^(.*)$ /Public/$1 [L]
+</IfModule>
+# php -- BEGIN cPanel-generated handler, do not edit
+# Configure el paquete “ea-php82” como el lenguaje de programación predeterminado “PHP”.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php82 .php .php8 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
