@@ -5,16 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model as DB;
 
 
-class Users extends DB
+class Offices extends DB
 {
-    protected $table = "usuarios";
+    protected $table = "oficinas";
     protected $guarded = ["id", "created_at", "updated_at"];
 
-    //metodo para crear una relacion
-    public function OfficeUsers(){
-        return $this->hasOne(OfficeUser::class, "id_usuario", "id");
-    }
     //Metodo que trae todas las columnas de la tabla
+    public function OfficeUsers(){
+        return $this->hasMany(OfficeUser::class, "id_oficina", "id");
+    }
     public function getColumns()
     {
         return $this->getConnection()->getSchemaBuilder()->getColumnListing($this->getTable());

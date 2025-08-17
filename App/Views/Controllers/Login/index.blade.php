@@ -8,6 +8,7 @@
 
 @endsection
 @section('content')
+   <!-- Acá se empieza con el html -->
     Hola mundo
 @endsection
 @section('scripts_bottom')
