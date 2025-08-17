@@ -15,42 +15,28 @@ title: PHP MVC Template - Documentación
 
 ¡Bienvenido a la documentación oficial del **PHP MVC Template**!
 
-## 📚 Índice de Contenidos
+## 📚 Documentación Disponible
 
 ### 🚀 Primeros Pasos
-- **[Instalación](Installation.html)** - Configuración inicial del proyecto
-- **[Configuración Apache](Apache-Setup.html)** - Setup para servidor Apache
-- **[Configuración Nginx](Nginx-Setup.html)** - Setup para servidor Nginx
-- **[Variables de Entorno](Environment-Variables.html)** - Configuración del archivo .env
-
-### 🏗️ Arquitectura del Framework
-- **[Estructura del Proyecto](Project-Structure)** - Organización de archivos y carpetas
-- **[Sistema de Rutas](Routing-System)** - Cómo funciona el enrutamiento
-- **[Patrón MVC](MVC-Pattern)** - Implementación del patrón MVC
+- **[📦 Instalación](Installation.html)** - Configuración inicial del proyecto
+- **[🔴 Configuración Apache](Apache-Setup.html)** - Setup para servidor Apache  
+- **[🟢 Configuración Nginx](Nginx-Setup.html)** - Setup para servidor Nginx
+- **[🌍 Variables de Entorno](Environment-Variables.html)** - Configuración del archivo .env
 
 ### 💼 Desarrollo de la Aplicación
-- **[Creando Controladores](Creating-Controllers.html)** - Guía para crear controladores
-- **[Creando Modelos](Creating-Models.html)** - Trabajando con modelos Eloquent y relaciones
-- **[Creando Vistas](Creating-Views.html)** - Sistema de plantillas Blade
-- **[Gestión de Sesiones](Session-Management.html)** - Autenticación y sesiones
-- **[Envío de Correos](Email-System.html)** - Sistema de correos electrónicos
+- **[🗄️ Creando Modelos](Creating-Models.html)** - Trabajando con modelos Eloquent y relaciones
+- **[📝 Tutorial CRUD](CRUD-Tutorial.html)** - Tutorial completo: sistema Usuario-Oficina
+- **[🔍 Ejemplos Base de Datos](Database-Examples.html)** - Trabajando con la BD de ejemplo
 
-### 🔧 Herramientas y Utilidades
-- **[Funciones Helper](Helper-Functions)** - Funciones auxiliares disponibles
-- **[Clases Utilitarias](Utility-Classes)** - Clases predefinidas del framework
-- **[Subida de Archivos](File-Upload)** - Manejo de archivos
+### 🚀 Despliegue y Producción  
+- **[🔄 CI/CD Workflow](CI-CD-Workflow.html)** - Integración y despliegue continuo
 
-### 📝 Ejemplos Prácticos
-- **[Tutorial CRUD](CRUD-Tutorial.html)** - Tutorial completo: sistema Usuario-Oficina
-- **[API REST](REST-API.html)** - Desarrollo de APIs REST
-- **[Sistema de Autenticación](Authentication-System.html)** - Implementar login/logout
-- **[Ejemplos Base de Datos](Database-Examples.html)** - Trabajando con la BD de ejemplo
+### 📖 Documentación Adicional
 
-### 🚀 Despliegue y Producción
-- **[Despliegue en Producción](Production-Deployment.html)** - Configuración para producción
-- **[CI/CD Workflow](CI-CD-Workflow.html)** - Integración y despliegue continuo
-- **[Seguridad](Security.html)** - Mejores prácticas de seguridad
-- **[Solución de Problemas](Troubleshooting.html)** - Errores comunes y soluciones
+> **Nota**: Esta documentación cubre las características principales del framework. 
+> Para funcionalidades adicionales como creación de controladores, vistas, autenticación, APIs REST, etc., 
+> consulta los ejemplos en el código fuente o revisa el [Tutorial CRUD](CRUD-Tutorial.html) que incluye 
+> ejemplos prácticos de controladores y vistas.
 
 ---
 
