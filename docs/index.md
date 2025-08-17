@@ -5,6 +5,14 @@ title: PHP MVC Template - Documentación
 
 # 🏠 PHP MVC Template - Documentación
 
+<div style="background: #f4f4f4; padding: 1rem; margin: 1rem 0; border-radius: 8px; text-align: center;">
+  <strong>📚 Navegación Rápida:</strong>
+  <a href="Installation.html" style="margin: 0 10px; color: #159957;">📦 Instalación</a> |
+  <a href="Creating-Models.html" style="margin: 0 10px; color: #159957;">🗄️ Modelos</a> |
+  <a href="CRUD-Tutorial.html" style="margin: 0 10px; color: #159957;">📝 Tutorial CRUD</a> |
+  <a href="CI-CD-Workflow.html" style="margin: 0 10px; color: #159957;">🚀 CI/CD</a>
+</div>
+
 ¡Bienvenido a la documentación oficial del **PHP MVC Template**!
 
 ## 📚 Índice de Contenidos

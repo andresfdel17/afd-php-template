@@ -1,16 +1,10 @@
 title: PHP MVC Template
 description: Template profesional para aplicaciones web PHP con patrón MVC
-theme: jekyll-theme-cayman
-
-# GitHub repository
-repository: tu-usuario/tu-repo
-
-# Base URL
-baseurl: ""
-url: ""
+remote_theme: pages-themes/cayman@v0.2.0
 
 # Plugins
 plugins:
+  - jekyll-remote-theme
   - jekyll-optional-front-matter
   - jekyll-readme-index
   - jekyll-default-layout
@@ -22,9 +16,6 @@ kramdown:
   input: GFM
   hard_wrap: false
 
-# Permalink structure
-permalink: /:title.html
-
 # Files to exclude
 exclude:
   - Gemfile
@@ -33,22 +24,3 @@ exclude:
   - vendor
   - "*.sh"
   - "README.md"
-
-# Default layout
-defaults:
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "default"
-
-# Navigation
-navigation:
-  - title: "Inicio"
-    url: "/"
-  - title: "Instalación"
-    url: "/Installation.html"
-  - title: "Tutorial CRUD"
-    url: "/CRUD-Tutorial.html"
-  - title: "CI/CD"
-    url: "/CI-CD-Workflow.html"
