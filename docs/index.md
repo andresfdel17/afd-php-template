@@ -10,10 +10,10 @@ title: PHP MVC Template - Documentación
 ## 📚 Índice de Contenidos
 
 ### 🚀 Primeros Pasos
-- **[Instalación](Installation)** - Configuración inicial del proyecto
-- **[Configuración Apache](Apache-Setup)** - Setup para servidor Apache
-- **[Configuración Nginx](Nginx-Setup)** - Setup para servidor Nginx
-- **[Variables de Entorno](Environment-Variables)** - Configuración del archivo .env
+- **[Instalación](Installation.html)** - Configuración inicial del proyecto
+- **[Configuración Apache](Apache-Setup.html)** - Setup para servidor Apache
+- **[Configuración Nginx](Nginx-Setup.html)** - Setup para servidor Nginx
+- **[Variables de Entorno](Environment-Variables.html)** - Configuración del archivo .env
 
 ### 🏗️ Arquitectura del Framework
 - **[Estructura del Proyecto](Project-Structure)** - Organización de archivos y carpetas
@@ -21,11 +21,11 @@ title: PHP MVC Template - Documentación
 - **[Patrón MVC](MVC-Pattern)** - Implementación del patrón MVC
 
 ### 💼 Desarrollo de la Aplicación
-- **[Creando Controladores](Creating-Controllers)** - Guía para crear controladores
-- **[Creando Modelos](Creating-Models)** - Trabajando con modelos Eloquent y relaciones
-- **[Creando Vistas](Creating-Views)** - Sistema de plantillas Blade
-- **[Gestión de Sesiones](Session-Management)** - Autenticación y sesiones
-- **[Envío de Correos](Email-System)** - Sistema de correos electrónicos
+- **[Creando Controladores](Creating-Controllers.html)** - Guía para crear controladores
+- **[Creando Modelos](Creating-Models.html)** - Trabajando con modelos Eloquent y relaciones
+- **[Creando Vistas](Creating-Views.html)** - Sistema de plantillas Blade
+- **[Gestión de Sesiones](Session-Management.html)** - Autenticación y sesiones
+- **[Envío de Correos](Email-System.html)** - Sistema de correos electrónicos
 
 ### 🔧 Herramientas y Utilidades
 - **[Funciones Helper](Helper-Functions)** - Funciones auxiliares disponibles
@@ -33,16 +33,16 @@ title: PHP MVC Template - Documentación
 - **[Subida de Archivos](File-Upload)** - Manejo de archivos
 
 ### 📝 Ejemplos Prácticos
-- **[Tutorial CRUD](CRUD-Tutorial)** - Tutorial completo: sistema Usuario-Oficina
-- **[API REST](REST-API)** - Desarrollo de APIs REST
-- **[Sistema de Autenticación](Authentication-System)** - Implementar login/logout
-- **[Ejemplos Base de Datos](Database-Examples)** - Trabajando con la BD de ejemplo
+- **[Tutorial CRUD](CRUD-Tutorial.html)** - Tutorial completo: sistema Usuario-Oficina
+- **[API REST](REST-API.html)** - Desarrollo de APIs REST
+- **[Sistema de Autenticación](Authentication-System.html)** - Implementar login/logout
+- **[Ejemplos Base de Datos](Database-Examples.html)** - Trabajando con la BD de ejemplo
 
 ### 🚀 Despliegue y Producción
-- **[Despliegue en Producción](Production-Deployment)** - Configuración para producción
-- **[CI/CD Workflow](CI-CD-Workflow)** - Integración y despliegue continuo
-- **[Seguridad](Security)** - Mejores prácticas de seguridad
-- **[Solución de Problemas](Troubleshooting)** - Errores comunes y soluciones
+- **[Despliegue en Producción](Production-Deployment.html)** - Configuración para producción
+- **[CI/CD Workflow](CI-CD-Workflow.html)** - Integración y despliegue continuo
+- **[Seguridad](Security.html)** - Mejores prácticas de seguridad
+- **[Solución de Problemas](Troubleshooting.html)** - Errores comunes y soluciones
 
 ---
 
@@ -91,7 +91,7 @@ Este template implementa el patrón **Model-View-Controller (MVC)** con caracter
    # Edita .env con tus configuraciones
    ```
 
-4. **Configura tu servidor web**: Ver [Configuración Apache](Apache-Setup) o [Configuración Nginx](Nginx-Setup)
+4. **Configura tu servidor web**: Ver [Configuración Apache](Apache-Setup.html) o [Configuración Nginx](Nginx-Setup.html)
 
 5. **¡Listo!** Visita tu aplicación en el navegador.
 

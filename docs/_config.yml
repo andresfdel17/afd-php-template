@@ -5,6 +5,10 @@ theme: jekyll-theme-cayman
 # GitHub repository
 repository: tu-usuario/tu-repo
 
+# Base URL
+baseurl: ""
+url: ""
+
 # Plugins
 plugins:
   - jekyll-optional-front-matter
@@ -18,20 +22,33 @@ kramdown:
   input: GFM
   hard_wrap: false
 
+# Permalink structure
+permalink: /:title.html
+
 # Files to exclude
 exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
   - vendor
+  - "*.sh"
+  - "README.md"
+
+# Default layout
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
 
 # Navigation
 navigation:
   - title: "Inicio"
     url: "/"
   - title: "Instalación"
-    url: "/Installation"
+    url: "/Installation.html"
   - title: "Tutorial CRUD"
-    url: "/CRUD-Tutorial"
+    url: "/CRUD-Tutorial.html"
   - title: "CI/CD"
-    url: "/CI-CD-Workflow"
+    url: "/CI-CD-Workflow.html"

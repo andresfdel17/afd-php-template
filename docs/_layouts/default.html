@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>{{ page.title | default: site.title | default: site.github.repository_name }} | {{ site.title | default: site.github.repository_name }}</title>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    
+    <style>
+      .back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: #159957;
+        color: white;
+        padding: 12px 15px;
+        border-radius: 50%;
+        text-decoration: none;
+        font-size: 18px;
+        opacity: 0;
+        transition: opacity 0.3s;
+        z-index: 1000;
+      }
+      
+      .back-to-top.visible {
+        opacity: 1;
+      }
+      
+      .back-to-top:hover {
+        background: #136e4a;
+        color: white;
+      }
+      
+      .breadcrumb {
+        background: #f4f4f4;
+        padding: 0.5rem 1rem;
+        margin: 1rem 0;
+        border-radius: 4px;
+        font-size: 0.9rem;
+      }
+      
+      .breadcrumb a {
+        color: #159957;
+        text-decoration: none;
+      }
+      
+      .breadcrumb a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    {% include navigation.html %}
+    
+    <main id="content" class="main-content" role="main">
+      <!-- Breadcrumb -->
+      <div class="breadcrumb">
+        <a href="{{ '/' | relative_url }}">🏠 Inicio</a>
+        {% if page.title and page.title != "PHP MVC Template - Documentación" %}
+          → {{ page.title }}
+        {% endif %}
+      </div>
+      
+      {{ content }}
+
+      <footer class="site-footer">
+        <div style="text-align: center; padding: 2rem 0; border-top: 1px solid #ddd; margin-top: 3rem;">
+          <p>
+            📚 <strong>PHP MVC Template</strong> - Documentación completa<br>
+            🚀 <a href="https://github.com/{{ site.github.owner_name }}/{{ site.github.repository_name }}">Ver en GitHub</a> | 
+            🐛 <a href="https://github.com/{{ site.github.owner_name }}/{{ site.github.repository_name }}/issues">Reportar Issues</a>
+          </p>
+          <p style="font-size: 0.9rem; color: #666;">
+            Última actualización: {{ site.time | date: "%B %d, %Y" }}
+          </p>
+        </div>
+      </footer>
+    </main>
+    
+    <!-- Back to top button -->
+    <a href="#" class="back-to-top" id="backToTop">↑</a>
+
+    <script>
+      // Back to top functionality
+      window.addEventListener('scroll', function() {
+        const backToTop = document.getElementById('backToTop');
+        if (window.pageYOffset > 300) {
+          backToTop.classList.add('visible');
+        } else {
+          backToTop.classList.remove('visible');
+        }
+      });
+      
+      document.getElementById('backToTop').addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+      
+      // Add anchors to headings
+      document.querySelectorAll('h2, h3, h4').forEach(function(heading) {
+        const id = heading.textContent.toLowerCase()
+          .replace(/[^\w\s-]/g, '')
+          .replace(/\s+/g, '-')
+          .trim();
+        heading.id = id;
+        
+        const anchor = document.createElement('a');
+        anchor.href = '#' + id;
+        anchor.className = 'header-anchor';
+        anchor.textContent = '🔗';
+        anchor.style.marginLeft = '0.5rem';
+        anchor.style.opacity = '0';
+        anchor.style.transition = 'opacity 0.3s';
+        
+        heading.appendChild(anchor);
+        
+        heading.addEventListener('mouseenter', function() {
+          anchor.style.opacity = '0.6';
+        });
+        
+        heading.addEventListener('mouseleave', function() {
+          anchor.style.opacity = '0';
+        });
+      });
+    </script>
+  </body>
+</html>
